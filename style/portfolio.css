@@ -203,15 +203,33 @@ textarea {
 }
 /* Mobile devices */
 @media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
+  nav,
+  nav > ul,
+  .banner,
   .skills-container,
   .resume-container,
-  footer {
+  footer,
+  .about-info-container {
     flex-direction: column;
   }
+  nav > ul {
+    gap: 10px;
+  }
+  .banner .profile-picture {
+    width: 100%;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  .banner,
   #what-i-do-description {
     padding: 20px;
   }
-  footer {
+  footer,
+  .about {
     padding: 10px;
   }
   .footer-column {
@@ -226,5 +244,8 @@ textarea {
 @media screen and (min-width: 576px) and (max-width: 992px) {
   footer {
     padding: 30px;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
   }
 }
